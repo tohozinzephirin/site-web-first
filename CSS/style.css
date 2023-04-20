@@ -14,13 +14,8 @@ main {
     padding: 8px 3rem 0;
 }
 
-.en-tete {
-    /* border: 3px solid black; */
-    
-}
-
 header {
-    
+
     position: relative;
     height: 100%;
 
@@ -29,55 +24,59 @@ header {
 header nav {
     width: 100%;
     height: 60px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
     justify-content: space-between;
 }
 
 header .logo {
     width: max-content;
-    border: thin solid black;
+    /* border: thin solid black; */
     height: 100%;
     display: flex;
+    column-gap: .5rem;
+    font-size: 1rem;
+    align-items: center;
 }
 
 header .logo>.rond {
     /* border: 1px solid black; */
-   width: 2rem;
-   height: 2rem; 
-   background-color: rgb(82, 184, 82);
-   text-align: center;
-   display: flex;
-   color: white;
-   border-radius: 50%;
-   font-weight: 600;
-   align-items: center;
-   justify-content: center;
-   font-size: 25px;
+    width: 2rem;
+    height: 2rem;
+    background-color: rgb(82, 184, 82);
+    text-align: center;
+    display: flex;
+    color: white;
+    border-radius: 50%;
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
 }
 
 header .nom {
     font-size: 1.25rem;
     font-weight: 400;
-    
+
 }
 
 header .nom span {
-    
+    font-weight: 600;
+    /* color: blue; */
 }
 
 menu {
     display: flex;
     list-style: none;
-    border: thin solid black;
+    /* border: thin solid black; */
     height: 100%;
     margin: 0;
 }
 
 menu li {
-   width: 7.5rem;
-   font-size: .9rem;
-   line-height: 60px;
+    width: 7.5rem;
+    font-size: .9rem;
+    line-height: 60px;
 
 }
 
@@ -87,11 +86,89 @@ menu>li>a {
     font-size: 14.5px;
     font-weight: 400;
 }
-.image-texte  small {
+
+header .bio-section {
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 4rem auto 0;
+}
+
+header .avatar {
+    max-width: 240px;
+    max-height: 240px;
+    margin: auto;
+}
+
+header .avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border: 10px solid #f0f0f0;
+    box-sizing: border-box;
+    border-radius: 50%;
+    box-shadow: 0px 1px 8px 3px rgba(100, 100, 100, .25);
+}
+
+header .bio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.bio small {
+    font-size: 13px;
+    color: #6f6f6f;
+    font-weight: 600;
+    margin-bottom: .5rem;
+}
+
+.bio h1 {
+    margin: 0;
+    line-height: 1;
+    word-spacing: -3px;
+    font-weight: 700;
+}
+
+p {
+    line-height: 1.5;
+    color: #222;
+    font-weight: 400;
+    margin: 0;
+}
+
+.bio p {
+    margin-top: 10px;
+    margin-bottom: 14px;
+}
+
+.bio .bio-buttons {
+    width: 50%;
+    display: flex;
+    column-gap: 10px;
+    height: auto;
+}
+
+.bio button {
+    width: 130px;
+    padding: 8px 12px;
+    border-radius: 18px;
+    font-size: 15px;
+    border: 1.75px solid rgb(160, 160, 160);
+    background: none;
+    box-shadow: .5px 1px 6px 2px rgba(100, 100, 100, .2);
 
 }
-.image-texte  h1 {
-    
+
+.bio-buttons>a>button {
+    width: 160px;
 }
 
+.bio-buttons a {
+    text-decoration: none;
+}
 
+.bio button:focus {
+    border: 2px solid rgb(82, 184, 82);
+}
