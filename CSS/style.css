@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+
 html,
 body {
     /*   */
@@ -5,7 +7,7 @@ body {
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Raleway', sans-serif;
     margin: 0;
     width: 100%;
 }
@@ -17,7 +19,9 @@ main {
 header {
 
     position: relative;
-    height: 100%;
+    width: 100%;
+    margin-bottom: 2.5rem;
+    height: fit-content;
 
 }
 
@@ -171,4 +175,48 @@ p {
 
 .bio button:focus {
     border: 2px solid rgb(82, 184, 82);
+}
+
+/* fin de la partie header */
+
+/* passer à la partie section specialite */
+
+.container {
+    width: 100%;
+    padding-top: 3rem;
+}
+
+.specialites {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1rem;
+}
+
+.specialites>h2 {
+    grid-column: 1 /3;
+    grid-row: auto;
+    font-size: 1.4rem;
+    word-spacing: -2px;
+    text-transform: capitalize;
+    margin: 10px 0;
+}
+
+.specialites .specialite {
+    display: flex;
+}
+
+.specialites .material-icons {
+    font-size: 36px;
+    line-height: 2;
+    color: rgba(82, 184, 82, .85);
+    padding-right: 1rem;
+}
+
+.specialites h3 {
+    margin: 10px 0;
+}
+
+.testimonials h2 {
+    font-size: 1.4rem;
+    margin-top: 0;
 }
